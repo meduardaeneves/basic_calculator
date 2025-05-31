@@ -1,7 +1,7 @@
-# Basic Calculator
+5# Basic Calculator
 
 <p align="center">
-  <img src="basic_calculator_logo.png" width="300">
+  <img src="basic_calculator_logo.png" width="350">
 </p>
 
 <p>Project developed to act as a simple calculation that can excecute the following operations:</p>
