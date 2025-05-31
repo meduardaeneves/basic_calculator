@@ -1,6 +1,8 @@
 # Basic Calculator
 
-![Basic Calculator](basic_calculator_logo.png)
+<p align="center">
+  <img src="basic_calculator_logo.png" width="300">
+</p>
 
 <p>Project developed to act as a simple calculation that can excecute the following operations:</p>
 <ul>
