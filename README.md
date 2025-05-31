@@ -1,5 +1,7 @@
 # Basic Calculator
 
+![Basic Calculator](basic_calculator_logo.png)
+
 <p>Project developed to act as a simple calculation that can excecute the following operations:</p>
 <ul>
   <li>Addition</li>
