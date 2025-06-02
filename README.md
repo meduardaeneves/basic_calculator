@@ -1,4 +1,4 @@
-5# Basic Calculator
+# Basic Calculator
 
 <p align="center">
   <img src="basic_calculator_logo.png" width="350">
