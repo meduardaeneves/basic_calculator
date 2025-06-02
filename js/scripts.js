@@ -71,11 +71,21 @@ class Calculator {
     
     resolution () {
         // explode string em array
+
         let textoLimpo = this.upperValue.textContent.replace(/\s+/g, ' ');
         let upperValueArray = (textoLimpo.split(' '))
-        console.log(upperValueArray)
-        // resultado operação 
-        // let result = [];
+      
+// Abaixo vamos verificar o último índice do array: se for string vazia, será removido.
+// Se for um símbolo, também será removido
+        if (upperValueArray[upperValueArray.length - 1] === '') {
+            upperValueArray.pop();
+        }
+
+        const simbolos = ['x', '+', '-', '÷'];
+        if (simbolos.includes(upperValueArray[upperValueArray.length - 1])) {
+            upperValueArray.pop()
+        }
+
 
         // For para resolver problema:
         if (upperValueArray.includes('x')) {
@@ -128,6 +138,7 @@ class Calculator {
             calc.clearValues();
         } else if (input == '=') {
             calc.resolution()
+
         } 
         else {
         // verifica se eu tenho um resultado na tela e se estou digitando um num
