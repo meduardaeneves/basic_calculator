@@ -142,10 +142,10 @@ class Calculator {
             }           
             
             //verifica se o meu UpperValue está vazio, caso sim
-            // e eu estiver colocando algo sem ser digito, cancela
-            if (calc.upperValue.textContent == '0' && !reg.test(input)) {
-                return false
-            }
+            // e eu estiver colocando algo sem ser digito, cancela --> n fiz isso pois permito somar c zero
+            // if (calc.upperValue.textContent == '0' && !reg.test(input)) {
+            //     return false
+            // }
 
             //Verifica se precisa adicionar ou não:
             // se meu último dígito for (+;-;/;*) eu vou substitur ele pelo novo apertado
@@ -166,7 +166,7 @@ class Calculator {
             }
             
             // adiciona o INPUT ao DISPLAY
-            if (upperValue == '0') {
+            if (upperValue == '0' && reg.test(input)) {
                 calc.upperValue.textContent = input;
             } else {
                 calc.upperValue.textContent += input;
